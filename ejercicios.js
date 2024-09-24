@@ -16,10 +16,19 @@ if (culpable == true) {
 
 //3
 function name(nombre) {
-    console.log(nombre);
+
+    if (typeof nombre == "string") {
+
+        console.log(nombre);
+
+    } else {
+
+        console.log("Debo ser ejecutada con un string");
+    }
 }
 
 name("Xavi")
+name (2)
 
 //5
 let array = [1,2,3,4,5,6,7,8,9,10];
