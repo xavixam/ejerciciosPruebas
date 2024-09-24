@@ -1,5 +1,9 @@
-//1 usar el forEach
+//1 
 let tb = "The Bridge 2023";
+let tb2 = tb.split(" ");
+
+console.log(tb.length);
+console.log(tb2);
 
 
 //2
@@ -11,12 +15,12 @@ if (culpable == true) {
     console.log("No es culpable");
 }
 
-//3 pasar el argumento y saber tipo de la variable
-let nombre;
-
-function saludar (nombre) {
-    return console.log("Hola, soy " + nombre);
+//3
+function name(nombre) {
+    console.log(nombre);
 }
+
+name("Xavi")
 
 //5
 let array = [1,2,3,4,5,6,7,8,9,10];
@@ -27,4 +31,13 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-//6 modificar contenido html
+//6 
+let p = document.getElementById("miParrafo");
+let b = document.getElementById("miBoton");
+
+p.textContent("Nuevo Texto");
+p.style.color="red";
+p.style.fontWeight="bold";
+document.getElementById("miLista").innerHTML("<li>Nuevo elemento de lista</li>");
+miBoton.addEventListener('click', clickar);
+function clickar() {alert("Has hecho click")};
